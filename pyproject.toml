@@ -17,7 +17,7 @@ build-backend = "setuptools.build_meta"
 # ----------------------------------------------------------------------
 [project]
 name = "PythonProjectBootstrapperTest2"
-description = "Testing PythonProjectBootstrapper output."
+description = "Testing output produced by PythonProjectBootstrapper"
 
 license = { text = "MIT" }
 
