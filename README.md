@@ -67,15 +67,14 @@ TODO: Complete this section
             <td><code>black</code></td>
             <td>Validates that the source code is formatted by <a href="https://github.com/psf/black" target="_blank">black</a>.</td>
             <td>
-                <table>
-                   <tr>
-                       <td>Validation</td>
-                       <td><code>python Build.py black</code></td>
-                   </tr>
-                   <tr>
-                      <td>Perform formatting</td>
-                      <td><code>python Build.py black --format</code></td>
-                </table>
+                <p>
+                    Validation:<br/>
+                    <code>python Build.py black</code>
+                </p>
+                <p>
+                    Perform formatting:<br/>
+                    <code>python Build.py black --format</code>
+                </p>
             </td>
         </tr>
         <tr>
@@ -87,16 +86,14 @@ TODO: Complete this section
             <td><code>pytest</code></py>
             <td>Runs automated tests using <a href="https://docs.pytest.org/" target="_blank">pytest</a>.</td>
             <td>
-                <table>
-                    <tr>
-                        <td>Without Code Coverage</td>
-                        <td><code>python Build.py pytest</code></td>
-                    </tr>
-                    <tr>
-                        <td>With Code Coverage</td>
-                        <td><code>python Build.py pytest --code-coverage</code></td>
-                    </tr>
-                </table>
+                <p>
+                    Without Code Coverage:<br/>
+                    <code>python Build.py pytest</code>
+                </p>
+                <p>
+                    With Code Coverage:<br/>
+                    <code>python Build.py pytest --code-coverage</code>
+                </p>
             </td>
         </tr>
         <tr>
@@ -113,16 +110,14 @@ TODO: Complete this section
             <td><code>publish</code></td>
             <td>Publishes a Python wheel package to <a href="https://pypi.org/" target="_blank">PyPi</a>.</td>
             <td>
-                <table>
-                    <tr>
-                        <td><a href="https://test.pypi.org/" target="_blank">https://test.pypi.org</a></td>
-                        <td><code>python Build.py publish &lt;your PyPi API token here&gt;</code></td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://pypi.org/" target="_blank">https://pypi.org</a></td>
-                        <td><code>python Build.py publish &lt;your PyPi API token here&gt; --production</code></td>
-                    </tr>
-                </table>
+                <p>
+                    <a href="https://test.pypi.org/" target="_blank">https://test.pypi.org</a>:<br/>
+                    <code>python Build.py publish &lt;your PyPi API token here&gt;</code>
+                </p>
+                <p>
+                    <a href="https://pypi.org/" target="_blank">https://pypi.org</a>:<br/>
+                    <code>python Build.py publish &lt;your PyPi API token here&gt; --production</code>
+                </p>
             </td>
         </tr>
         <tr>
