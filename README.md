@@ -1,7 +1,7 @@
 # PythonProjectBootstrapperTest2
 
 [![CI](https://github.com/gt-sse-center/PythonProjectBootstrapperTest2/actions/workflows/standard.yaml/badge.svg?event=push)](https://github.com/gt-sse-center/PythonProjectBootstrapperTest2/actions/workflows/standard.yaml)
-[![Code Coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/gt-sse-center/2f9d770d13e3a148424f374f74d41f4b/raw/PythonProjectBootstrapperTest2_coverage.json)](https://github.com/gt-sse-center/PythonProjectBootstrapperTest2/actions)
+[![Code Coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/davidbrownell/2f9d770d13e3a148424f374f74d41f4b/raw/PythonProjectBootstrapperTest2_coverage.json)](https://github.com/gt-sse-center/PythonProjectBootstrapperTest2/actions)
 [![License](https://img.shields.io/github/license/gt-sse-center/PythonProjectBootstrapperTest2?color=dark-green)](https://github.com/gt-sse-center/PythonProjectBootstrapperTest2/blob/master/LICENSE.txt)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/y/gt-sse-center/PythonProjectBootstrapperTest2?color=dark-green)](https://github.com/gt-sse-center/PythonProjectBootstrapperTest2/commits/main/)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/PythonProjectBootstrapperTest2?color=dark-green)](https://pypi.org/project/pythonprojectbootstrappertest2/)
@@ -19,11 +19,22 @@ TODO: Complete this section
 
 TODO: Complete this section
 
+## Installation via Executable
+
+Download an executable for Linux, MacOS, or Windows to use the functionality provided by this repository without a dependency on [Python](https://www.python.org).
+
+1. Download the archive for the latest release [here](https://github.com/gt-sse-center/PythonProjectBootstrapperTest2/releases/latest); the files will begin with `exe.` and contain the name of your operating system.
+2. Decompress the archive
+
 ## Installation via pip
+
+Install the PythonProjectBootstrapperTest2 package via [pip](https://pip.pypa.io/en/stable/) (Package Installer for Python) to use it with your python code.
 
 `pip install PythonProjectBootstrapperTest2`
 
 ## Local Development
+
+Follow these steps to prepare the repository for local development activities.
 
 1) Clone this repository
 2) Bootstrap the local repository by running...
