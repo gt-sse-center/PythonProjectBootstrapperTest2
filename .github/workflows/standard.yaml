@@ -64,6 +64,56 @@ jobs:
     secrets:
       GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
 
+# BugBug: Begin
+  # ----------------------------------------------------------------------
+  package_coverage_bugbug:
+    needs: validate
+
+    name: Postprocess Coverage Info (BugBug)
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: "Checkout Source"
+        uses: actions/checkout@v4
+
+      - name: Download Coverage Data
+        uses: actions/download-artifact@v4
+        with:
+          path: stage
+          merge-multiple: true
+
+      - name: Bootstrap
+        shell: bash
+        run: |
+          ./Bootstrap.sh
+
+      - name: Combine
+        shell: bash
+        run: |
+          . ./Activate.sh
+
+          coverage combine stage
+          coverage report --ignore-errors --show-missing --skip-covered
+          coverage json --ignore-errors
+
+          export TOTAL=$(python -c "import json;print(json.load(open('coverage.json'))['totals']['percent_covered_display'])")
+          echo "total=$TOTAL" >> $GITHUB_ENV
+          echo "### Total coverage: ${TOTAL}%" >> $GITHUB_STEP_SUMMARY
+
+      - name: Write File
+        shell: bash
+        run: |
+          echo "{\"label\":\"Coverage\",\"message\":\"--81%--\",\"schemaVersion\":1,\"color\":\"hsl(93, 100%, 40%)\"}" >> __code_coverage_badge_info.json
+
+      - name: Upload Archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: __code_coverage_badge_info.json
+          path: __code_coverage_badge_info.json
+          compression-level: 0
+# BugBug: End
+
   # ----------------------------------------------------------------------
   create_package:
     needs: validate
