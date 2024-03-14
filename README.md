@@ -8,10 +8,6 @@
 [![PyPI - Version](https://img.shields.io/pypi/v/PythonProjectBootstrapperTest2?color=dark-green)](https://pypi.org/project/pythonprojectbootstrappertest2/)
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/PythonProjectBootstrapperTest2)](https://pypistats.org/packages/pythonprojectbootstrappertest2)
 
-[![Code Coverage (BugBug)](https://img.shields.io/endpoint?url=https://github.com/gt-sse-center/PythonProjectBootstrapperTest2/releases/latest/download/__code_coverage_badge_info.json)](https://github.com/gt-sse-center/PythonProjectBootstrapperTest2/actions)
-
-
-
 # PythonProjectBootstrapperTest2
 Testing output produced by PythonProjectBootstrapper
 
